@@ -3,39 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Concept2Circuit Platform</title>
-    <style>
-        body { font-family: Arial, sans-serif; }
-        h1, h2, h3 { color: #333; }
-        .branch { margin-bottom: 20px; }
-    </style>
+    <title>Concept to Circuit</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Concept2Circuit Platform</h1>
-
-    <div class="branch" id="EE">
-        <h2>Electrical Engineering (EE)</h2>
-        <!-- Subjects, experiments, videos, theory, procedures, and viva questions go here -->
-    </div>
-
-    <div class="branch" id="CSE">
-        <h2>Computer Science Engineering (CSE)</h2>
-        <!-- Subjects, experiments, videos, theory, procedures, and viva questions go here -->
-    </div>
-
-    <div class="branch" id="ECE">
-        <h2>Electronics and Communication Engineering (ECE)</h2>
-        <!-- Subjects, experiments, videos, theory, procedures, and viva questions go here -->
-    </div>
-
-    <div class="branch" id="ME">
-        <h2>Mechanical Engineering (ME)</h2>
-        <!-- Subjects, experiments, videos, theory, procedures, and viva questions go here -->
-    </div>
-
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#experiments">Experiments</a></li>
+                <li><a href="#logout" onclick="logout()">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h1>Welcome to Concept to Circuit</h1>
+            <p>Here you can explore various electrical experiments.</p>
+        </section>
+        <section id="experiments">
+            <h2>Our Experiments</h2>
+            <div class="experiment" id="experiment1">
+                <h3>Experiment 1</h3>
+                <p>Description of Experiment 1.</p>
+            </div>
+            <div class="experiment" id="experiment2">
+                <h3>Experiment 2</h3>
+                <p>Description of Experiment 2.</p>
+            </div>
+        </section>
+    </main>
     <footer>
-        <p>Scoring functionality can be implemented as per the requirement.</p>
+        <p>&copy; 2026 Concept to Circuit</p>
     </footer>
-
+    <script>
+        function logout() {
+            alert('Logging out...');
+            // Additional logout functionality can be implemented here
+        }
+    </script>
 </body>
 </html>
